@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShotBot – Terms of Service</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+  /* Layout: one reading column, two documents (#terms, #privacy) with a small tab switcher on top. */
+  :root {
+    --bg: #fbf9fa;
+    --surface: #ffffff;
+    --fg: #1d1a1f;
+    --muted: #625c66;
+    --line: #e7e1e6;
+    --accent: #e0306e;
+    --accent-2: #f07a2e;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141116; --surface: #1c181f; --fg: #eeeaf0; --muted: #a59ead; --line: #2e2833;
+      --accent: #ff5c92; --accent-2: #ff9a55; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141116; --surface: #1c181f; --fg: #eeeaf0; --muted: #a59ead; --line: #2e2833;
+    --accent: #ff5c92; --accent-2: #ff9a55; color-scheme: dark;
+  }
+  body {
+    background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.65;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 64px;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 11px; flex: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center;
+  }
+  .mark svg { width: 18px; height: 18px; margin-left: 3px; }
+  .brand { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; }
+  .brand small { display: block; font-family: var(--body); font-weight: 500; font-size: 0.82rem; color: var(--muted); letter-spacing: 0; }
+  nav { display: flex; gap: 6px; flex-wrap: wrap; }
+  nav a {
+    font-size: 0.9rem; font-weight: 600; color: var(--muted); text-decoration: none; padding: 7px 14px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+  }
+  nav a[aria-current="page"] { color: var(--accent); border-color: var(--accent); }
+  nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  article { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px clamp(18px, 4vw, 36px); min-width: 0; }
+  h1 { font-family: var(--display); font-size: clamp(1.6rem, 4vw, 2rem); line-height: 1.2; margin: 0 0 4px; text-wrap: balance; }
+  .updated { color: var(--muted); font-size: 0.88rem; margin: 0 0 22px; }
+  h2 { font-family: var(--display); font-size: 1.08rem; margin: 26px 0 6px; }
+  p, li { max-width: 65ch; }
+  ul, ol { padding-left: 1.3rem; margin: 6px 0; }
+  li { margin: 4px 0; }
+  code { font-size: 0.88em; background: var(--bg); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 0.85rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+    <div class="mark" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0.8 L0 11.2 Q0 12 0.7 11.6 L9.5 6.6 Q10 6 9.5 5.4 L0.7 0.4 Q0 0 0 0.8Z" fill="#fff"/></svg></div>
+    <div class="brand">ShotBot<small>Personal clip tool for Polish GTA 6 streams</small></div>
+  </header>
+<nav aria-label="Documents"><a href="terms.html" aria-current="page">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<article id="terms">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: November 18, 2026</p>
+    <p>ShotBot is a personal, non-commercial tool that its owner runs on their own computer. It turns highlights
+      of Polish GTA 6 live streams into short clips. Only when the owner clicks “upload” does it send a clip to the
+      owner's own YouTube channel or to the owner's TikTok drafts, using the official YouTube Data API and TikTok
+      Content Posting API.</p>
+    <h2>1. Who can use it</h2>
+    <p>ShotBot is used only by its owner. It is not offered to the public and has no other users or accounts.</p>
+    <h2>2. Connected accounts</h2>
+    <p>The owner connects their TikTok or YouTube account with the official login screen and can disconnect it at
+      any time, in ShotBot (“Disconnect”) or in the TikTok or Google account settings.</p>
+    <h2>3. Content</h2>
+    <p>Every clip is reviewed by the owner before it is uploaded. On TikTok, each video goes to the drafts inbox and
+      is published manually in the TikTok app. Each clip credits the original streamer and links to their channel.</p>
+    <h2>4. Platform rules</h2>
+    <p>Use of ShotBot follows the TikTok Terms of Service and Community Guidelines, the YouTube Terms of Service and
+      the Google API Services terms.</p>
+    <h2>5. No warranty</h2>
+    <p>ShotBot is provided “as is”, without any warranty.</p>
+    <h2>6. Contact</h2>
+    <p>Questions about ShotBot: through the owner's GitHub profile, <a href="https://github.com/dawsoc123">github.com/dawsoc123</a>.</p>
+  </article>
+<footer>ShotBot · personal, non-commercial tool</footer>
+</div>
+</body>
+</html>
