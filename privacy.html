@@ -65,30 +65,65 @@
 <div class="wrap">
 <header>
     <div class="mark" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0.8 L0 11.2 Q0 12 0.7 11.6 L9.5 6.6 Q10 6 9.5 5.4 L0.7 0.4 Q0 0 0 0.8Z" fill="#fff"/></svg></div>
-    <div class="brand">ShotBot<small>Personal clip tool for Polish GTA 6 streams</small></div>
+    <div class="brand">shotbot<small>Personal clip tool for Polish GTA 6 streams</small></div>
   </header>
-<nav aria-label="Documents"><a href="terms.html">Terms of Service</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav>
+<nav aria-label="Documents"><a href="index.html">About</a><a href="terms.html">Terms of Service</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav>
 <article id="privacy">
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: November 18, 2026</p>
-    <p>ShotBot runs only on its owner's computer. It has no servers, no website accounts and no other users.</p>
-    <h2>Data ShotBot uses</h2>
+    <p>This policy explains what data <strong>shotbot</strong> uses, why, where it is kept and how to delete it.
+      shotbot is a personal desktop application that runs only on its owner's own computer. It has no servers,
+      no website accounts and no other users. The developer and the only user is the same person.</p>
+
+    <h2>1. What shotbot does</h2>
+    <p>shotbot saves highlight moments from public Polish GTA 6 live streams on Twitch and Kick, turns them into short
+      vertical clips with subtitles and, only when the owner clicks an upload button, sends a chosen clip to the
+      owner's own YouTube channel or to the owner's TikTok drafts.</p>
+
+    <h2>2. Data shotbot accesses</h2>
     <ul>
-      <li><strong>TikTok:</strong> your basic profile (open ID and display name, scope <code>user.info.basic</code>)
-        to show which account is connected, and permission to upload videos to your drafts (scope <code>video.upload</code>).</li>
-      <li><strong>YouTube / Google:</strong> permission to upload videos (scope <code>youtube.upload</code>) and to
-        read your channel name (scope <code>youtube.readonly</code>).</li>
+      <li><strong>Google / YouTube (YouTube Data API v3):</strong> the scope <code>youtube.upload</code> to upload a
+        video the owner selected, and <code>youtube.readonly</code> to read the connected channel's name and ID,
+        which are shown in the app so the owner can see which channel is connected.</li>
+      <li><strong>TikTok (Login Kit, Content Posting API):</strong> the scope <code>user.info.basic</code> to read the
+        account's open ID and display name, and <code>video.upload</code> to send a video to the account's drafts.</li>
+      <li>OAuth access tokens and refresh tokens issued by Google and TikTok.</li>
+      <li>Public stream data from Twitch and Kick (stream title, category, public chat messages) used to detect
+        highlight moments. No private data of viewers is collected.</li>
     </ul>
-    <h2>How it is stored</h2>
+    <p>shotbot does not access email addresses, contacts, private videos, comments, analytics or any other account data.</p>
+
+    <h2>3. How the data is used</h2>
     <ul>
-      <li>Access and refresh tokens are saved only in a local file on the owner's computer.</li>
-      <li>They are sent only to the official TikTok and Google APIs, never anywhere else.</li>
-      <li>No data is sold, shared with third parties, or used for advertising or analytics.</li>
+      <li>Tokens are used only to upload the clips the owner chose and to show the connected account name.</li>
+      <li>Data is not used for advertising, profiling, analytics or training of AI models.</li>
+      <li>Data is not sold, rented or shared with any third party.</li>
     </ul>
-    <h2>Deleting your data</h2>
-    <p>Click “Disconnect” in ShotBot to delete the stored tokens, or revoke access in your TikTok or Google account
-      settings. Uploaded videos can be deleted in the TikTok or YouTube app.</p>
-    <h2>Contact</h2>
+
+    <h2>4. Google API Services User Data Policy</h2>
+    <p>shotbot's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+
+    <h2>5. Storage and security</h2>
+    <ul>
+      <li>Tokens are stored only in a local file on the owner's computer, readable only by the owner's user account.</li>
+      <li>They are sent only to the official Google and TikTok API servers over HTTPS, never anywhere else.</li>
+      <li>Clips are stored on the owner's own disk.</li>
+    </ul>
+
+    <h2>6. Retention and deletion</h2>
+    <p>Tokens are kept until the owner clicks “Rozłącz” (Disconnect) in shotbot, which deletes them immediately.
+      Access can also be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+      or in the TikTok app settings. Uploaded videos can be deleted in YouTube Studio or the TikTok app.</p>
+
+    <h2>7. Children</h2>
+    <p>shotbot is not directed at children and is used only by its adult owner.</p>
+
+    <h2>8. Changes</h2>
+    <p>Any change to this policy is published on this page with a new “Last updated” date.</p>
+
+    <h2>9. Contact</h2>
     <p>Through the owner's GitHub profile, <a href="https://github.com/dawsoc123">github.com/dawsoc123</a>.</p>
   </article>
 <footer>ShotBot · personal, non-commercial tool</footer>
